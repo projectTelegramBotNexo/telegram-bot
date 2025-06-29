@@ -1,0 +1,176 @@
+@import '@fontsource/arimo';
+@import '@fontsource/arimo/500.css'; 
+@import '@fontsource/arimo/700.css';
+@import '@fontsource/arimo/600.css';
+
+/* Define CSS variables */
+:root {
+  --background-color: black;
+  --text-color: #fff;
+  --header-background-color: #12192C;
+  --header-text-color: #B0B8C1;
+  --header-img-background-color: #4A90E2;
+  --section-background-color: #12192C;
+  --section-text-color: #B0B8C1;
+  --section-heading-color: #0056b3;
+  --crypto-list-price-color: white;
+  --win-color: green;
+  --loss-color: red;
+  --footer-background-color: #12192C;
+  --footer-text-color: #B0B8C1;
+  --active-link-color: #4A90E2;
+  --footer-hover-color: #007bff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: var(--header-background-color);
+  padding: 20px;
+}
+
+.header h2 {
+  margin: 5px 0 20px;
+  font-size: 2rem;
+}
+
+.header img {
+  background-color: var(--header-img-background-color);
+  border-radius: 50%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: var(--header-text-color);
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--header-img-background-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.section {
+  background-color: var(--section-background-color);
+  padding: 20px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section p {
+  color: var(--section-text-color);
+  margin: 4px 0 10px;
+  font-size: 1rem;
+}
+
+.section h2 {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: var(--section-heading-color);
+}
+
+.currency-list, .crypto-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.crypto-list h1 {
+  font-size: 1rem;
+  color: var(--section-text-color);
+  margin: 0;
+}
+
+.crypto-list-price {
+  font-size: 1rem;
+  color: var(--crypto-list-price-color);
+  margin: 0;
+}
+
+.win {
+  color: var(--win-color);
+  font-size: 1rem;
+}
+
+.loss {
+  color: var(--loss-color);
+  font-size: 1rem;
+}
+
+.currency-list li, .crypto-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.currency-list li:last-child, .crypto-list li:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: var(--footer-background-color);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--footer-text-color);
+}
+
+.footer svg {
+  font-size: 1.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.active-link {
+  color: var(--active-link-color) !important;
+}
+
+.active-link svg {
+  color: var(--active-link-color) !important;
+}
+
+.footer div:hover {
+  color: var(--footer-hover-color);
+}
